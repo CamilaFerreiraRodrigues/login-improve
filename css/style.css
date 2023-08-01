@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@300;400;700&family=Montserrat:wght@200;300;500;900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@300;400;700&family=Montserrat:wght@200;300;500;900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  grid-template-areas:  'img login ';
+}
+
+
+section{
+  background-color:#003D6A;
+  grid-area: 'img';
+  
+  
+}
+
+.box-img{
+  display: flex;
+  width: 400px;
+  height: 150px;
+  margin: 30% auto ;
+}
+
+img{
+  width: 400px;
+  margin: 0 auto;
+  
+}
+
+
+
+form{
+  grid-area: 'login';
+  background: #FFFFFF;
+
+}
+
+.box-login{
+  background-color: #FFFFFF;;
+  height: 500px;
+  width: 350px;
+  margin: 18% auto;
+ 
+
+
+}
+
+.title-box-login{
+  margin-bottom: 40px;
+  font-family: Merriweather;
+  font-weight: 700;
+  color: #1A202C;
+  font-size: 14px;
+}
+.title-box-login p {
+  font-weight: 350px;
+  font-size: 12px;
+}
+
+
+.box-input{
+  background-color: #F4F2F2;
+  width: 350px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 1px #E8E8E8;
+  margin: 10px 0;
+}
+
+
+
+.data-input {
+  width: 350px;
+  font-family: 'Lato';
+}
+
+.input-email, .input-password{
+  padding-left: 15px;
+}
+
+.about-password{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  
+}
+.about-password a {
+  text-decoration: none;
+}
+
+.buttons-login{
+  width: 350px;
+  height: 48px;
+}
+
+.button-entrar{
+  background: #003D6A;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.button-google{
+  background: #1A202C;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.button-google img{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -3px;
+  bottom: -2px;
+}
+
+@media (max-width: 760px){
+  section{
+      display: none;
+      width: 100%;
+  }
+
+  .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+  }
+     form{
+      width: 90%;
+      margin: 0 auto;
+      padding: 2%;
+  }
+
+
+  .about-password{
+      width: 100%; 
+  }
+
+  .box-login{
+      width: 90%;
+      height: 90%;
+  } 
+
+  .data-input{
+      width: 100%;
+
+  }
+
+  .box-input{
+      width: 100%;
+      margin: 2% auto;
+  }
+
+  .buttons-login{
+      width: 100%;
+      
+  }
+
+}
